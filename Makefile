@@ -1,6 +1,7 @@
+.DEFAULT_GOAL := help
 MSG ?= Actualizacion automatica
 
-.PHONY: clean gitup justgit
+.PHONY: clean gitup justgit help
 
 clean:
 	find . -type d -name "__pycache__" -exec rm -rf {} +
