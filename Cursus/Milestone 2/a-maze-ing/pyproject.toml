@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "mazegen"
+version = "1.0.0"
+description = "A-Maze-ing maze generator and renderer"
+authors = ["jotriano", "jaidiaz-"]
+packages = [
+    { include = "src" }
+]
+
+[tool.poetry.dependencies]
+python = ">=3.10"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+[dependency-groups]
+dev = [
+    "flake8 (>=7.3.0,<8.0.0)",
+    "mypy (>=2.1.0,<3.0.0)"
+]
